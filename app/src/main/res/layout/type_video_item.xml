@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_marigin"
+            android:layout_marginTop="@dimen/list_marigin"
+            android:singleLine="true"
+            android:text="haha"
+            android:textColor="@color/black"
+            android:textSize="@dimen/news_title" />
+
+        <VideoView
+            android:id="@+id/vv_news_movie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_loadpic_height"
+            android:layout_below="@id/tv_news_title"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_news_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/big_loadpic_height"
+            android:layout_below="@id/tv_news_title"
+            android:src="@drawable/big_loadpic_empty_listpage" />
+
+        <ImageView
+            android:id="@+id/iv_news_movie_play"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/big_loadpic_height"
+            android:layout_below="@id/tv_news_title"
+            android:layout_centerInParent="true"
+            android:src="@drawable/playbig_move_textpage_normal" />
+    </RelativeLayout>
+
+    <include layout="@layout/type_item_common"
+        />
+
+</LinearLayout>

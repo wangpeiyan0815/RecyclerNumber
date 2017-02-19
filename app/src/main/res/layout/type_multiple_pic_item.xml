@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_marigin"
+            android:layout_marginTop="@dimen/list_marigin"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:text="haha"
+            android:textSize="@dimen/news_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_title" >
+
+            <ImageView
+                android:id="@+id/iv_news_pic1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/small_loadpic_height"
+                android:layout_weight="1"
+                android:src="@drawable/big_loadpic_empty_listpage" />
+
+            <ImageView
+                android:id="@+id/iv_news_pic2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/small_loadpic_height"
+                android:layout_weight="1"
+                android:src="@drawable/big_loadpic_empty_listpage" />
+
+            <ImageView
+                android:id="@+id/iv_news_pic3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/small_loadpic_height"
+                android:layout_weight="1"
+                android:src="@drawable/big_loadpic_empty_listpage" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/type_item_common" />
+
+</LinearLayout>
