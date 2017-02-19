@@ -101,7 +101,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             //视频类型
             return TYPE_LISTVIEW_VIODE;
         }
-        if (data.get(position).isHas_image()) {
+        if (!data.get(position).isHas_image()) {
             //没有图片的
             return TYPE_LISTVIEW_NO_PIC;
         }
